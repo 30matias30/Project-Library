@@ -76,11 +76,10 @@ h1{
     box-shadow: 3px 3px 8px #c4c4c4,
                -3px -3px 8px #fff;
     background-image: url(.//Icon/volcano-svgrepo-com.svg);
+    transition-duration: 500ms;
 }
 
-.toggle.active {
-        
-}
+
 
 #toggle-container.active .toggle {
     left: 40px;
