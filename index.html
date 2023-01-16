@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volcano Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-active.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="./Icon/volcano-svgrepo-com.svg">
+</head>
+<body>
+    
+
+    <div class="logo">
+
+        <div>
+            <img src="" alt="logo" class="volcan">
+            <h1 style="background: none;" class="volcano">Volcano</h1>
+        </div>
+
+        <Div class="pageTittle">
+            <h1>Personal Library</h1>
+        </Div>
+
+        <div id="toggle-container" class="no-active">
+
+            <div class="toggle"></div>
+            
+        </div>
+
+    </div>
+
+    <div class="bookListBody">
+
+        <div class="bookListBody-left">
+
+            <button id="newBook">Add New Book</button>
+
+            <div class="form">
+
+                <form action="" id="add-book">
+                    <p class="form-title">Let's do this!</p>
+                    
+                        <label for="title">Book Title</label>
+                        <input type="text" name="title" id="Title" required value="TWoK">
+                        
+                    
+                    <br>
+                    
+                        <label for="author">Author</label>
+                        <input type="text" name="author" id="Author" required value="Sanderson">
+                    
+                    <br>
+                    
+                        <label for="pageNumber">Number of Pages</label>
+                        <input type="number" name="pageNumber" id="Pages" required value="1200">
+                    
+                    <br>
+                    
+
+                        <p>Have you Read it?</p>
+                        <label for="Read">Read:</label>
+                        <select id="Read"  name="Read">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+
+                    
+                    
+                    <br>
+
+                    <div class="button submit-button">Submit To Library</div>
+
+                    <br>
+
+                    <button type="reset" class="reset-button">Reset Form</button>
+                                      
+
+                </form>
+
+            </div>
+
+        
+        </div>
+
+        <div class="bookListBody-right books">
+
+            <!-- <div class="card">
+
+                <p><h3>"The Way of King"</h3></p>
+                <p>by Brandon Sanderson</p>
+                <p>Pages: 1100</p>
+                <p>Read</p>
+                <span class="erase">Erase</span>
+
+            </div>
+
+            <div class="card">
+
+                <p><h3>"The Way of King"</h3></p>
+                <p>by Brandon Sanderson</p>
+                <p>Pages: 1100</p>
+                <p>Read</p>
+
+            </div> -->
+
+        
+        </div>
+
+    </div>
+
+
+    <script src="./toggle.js"></script>
+    <script src="./scrypt.js"></script>
+    <script src="./submitNewBook.js"></script>
+</body>
+</html>

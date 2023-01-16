@@ -1,0 +1,258 @@
+:root {
+    background-image: url(./Background/tanya-grypachevskaya-80x3QULJDN4-unsplash.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    --color: #aa1106;
+    --txt: rgb(185, 185, 185)
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--txt);
+    /* outline: auto; */
+    
+}
+
+.volcan {
+    height: 10vh;
+    padding: 5px;
+    content: url(./Icon/volcano-svgrepo-com.svg);
+}
+
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: #000000; */
+    position: relative;
+    top: 0.5vh;
+    gap: 1vw;
+    padding: 15px;
+
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo div {
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    user-select: none;
+}
+
+#toggle-container {
+    background-color: #f8f8f877;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    box-shadow: inset 4px 4px 6px #cecece,
+                inset -4px -4px 6px #fff;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#toggle-container.active {
+    box-shadow: inset 4px 4px 6px #aa1106,
+                inset -4px -4px 6px #aa1106;
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: scale(0.7);
+    background-color: linear-gradient(145deg, #d8d8d8, #ffffff);
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px #c4c4c4,
+               -3px -3px 8px #fff;
+    background-image: url(.//Icon/volcano-svgrepo-com.svg);
+}
+
+.toggle.active {
+        
+}
+
+#toggle-container.active .toggle {
+    left: 40px;
+    background-image: url(.//Icon/volcano-shadow.svg);
+}
+
+.bookListBody {
+    width: 95%;
+    height: 40vw;
+    display: flex;
+    margin-top: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 1vw;
+    /* background-color: #161748; */
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    justify-content: space-between;
+}
+
+.bookListBody-left {
+    width: 20%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* background-color: dodgerblue; */
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    
+}
+
+.bookListBody-right {
+    width: 70%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+button{
+    background-color: #000000;
+    /* background-color: rgba(0, 0, 0, 0); */
+    color: var(--color);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: var(--color);
+    color: black;
+    
+}
+
+input{
+    background-color: rgb(2, 2, 2);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--color);
+}
+
+.button {
+    background-color: #000000;
+    /* background-color: rgba(0, 0, 0, 0); */
+    color: var(--color);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--color);
+    color: black;
+    
+}
+
+.cardData :first-child{
+    font-weight: 1000;
+    font-size:x-large;
+}
+
+.cardButton {
+    display: flex;
+}
+
+.remove-book-button {
+    font-size: small;
+    height: fit-content;
+    width: min-content;
+    margin: 5px;
+
+}
+
+.read-status-button {
+    font-size: small;
+    height: fit-content;
+    width: min-content; 
+    margin: 5px;
+
+}
+
+#newBook {
+    margin: 40px 0;
+}
+
+form {
+    display: none;
+}
+
+form.visible {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    
+}
+
+input {
+    display: flex;
+    justify-content: center;
+}
+
+.bookListBody-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    
+}
+
+.card {
+    /* width: 300px; */
+    background-color: #000000;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    min-height:20ch;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow:inset 3px 3px 8px var(--color), inset -3px -3px 8px var(--color);
+    transition-duration: 500ms;
+    
+}
+
+.erase {
+    background-color: #000000;
+    /* background-color: rgba(0, 0, 0, 0); */
+    color: var(--color);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.erase:hover {
+    background-color: var(--color);
+    color: black;
+    
+}

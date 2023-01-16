@@ -1,0 +1,24 @@
+:root.active {
+    background-image: url(./Background/FotoJet.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    --color: #fff;
+    --txt: rgb(255, 255, 255)
+}
+
+#toggle-container.no-active {    
+    background-image: url(./Background/tanya-grypachevskaya-80x3QULJDN4-unsplash.jpg);
+    background-size: cover;
+}
+
+#toggle-container.active {
+    background-image: url(./Background/FotoJet.jpg);
+    background-size: cover;
+}
+
+
+.volcan.active {
+
+    content: url(./Icon/volcano-shadow.svg);
+}
